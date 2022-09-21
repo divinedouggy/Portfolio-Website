@@ -1,38 +1,220 @@
+body {
+
+    background-color: #8587DE;
+  /* background-color: #9FB7F5 */
+}
+
 .App {
+
   text-align: center;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ((( Home */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-master-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+.home-container-top {
+  display: flex;
+  width: 1200px;
+ 
+}
+
+.home-top-subcontainer1 {
+  display: flex;
+  width: 50%;
+}
+
+.home-top-subcontainer2 {
+  display: flex;
+  width: 50%;
+}
+
+
+.home-child-top1 {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 300px;
+  width: 300px;
+  background-color: #85B6DE;
+  box-shadow: 1px 1px 1px 1px;
+  color: #7688B5;
+  transition: .6s;
+  animation: blink 6s .6s infinite;
+  font-family: 'Abril Fatface', cursive;
+  line-height: 25px;
+  border-top-left-radius: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.home-child-top2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: #B096FA;
+  color: #7688B5;
+  box-shadow: 1px 1px 1px 1px;
+  transition: .6s;
+  animation: blink 6s .8s infinite;
+  font-family: 'Fjalla One', sans-serif;
+  border-top-right-radius: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-child-top3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: #85B6DE;
+  box-shadow: 1px 1px 1px 1px;
+  color: #7688B5;
+  transition: .2s;
+  animation: blink 6s 1s infinite;
+  font-family: 'Quicksand', sans-serif;
 }
+
+.home-child-top4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: #B096FA;
+  color: #7688B5;
+  box-shadow: 1px 1px 1px 1px;
+  transition: .2s;
+  animation: blink 6s 1.2s infinite;
+  font-family: 'Cairo', sans-serif;
+}
+
+.home-child-top1:hover {
+  transform: scale(1.10);
+  box-shadow: 5px 5px 5px 5px #7688B5;
+  z-index: 1;
+  transition: .2s;
+  border-bottom-right-radius: 10%;
+}
+
+.home-child-top2:hover {
+  transform: scale(1.10);
+  box-shadow: 5px 5px 5px 5px #7688B5;
+  z-index: 1;
+  transition: .2s;
+  border-bottom-left-radius: 10%;
+}
+
+.home-container-bottom {
+  display: flex;
+  width: 1200px;
+}
+
+.home-bottom-subcontainer1 {
+  display: flex;
+  width: 50%;
+}
+
+.home-bottom-subcontainer2 {
+  display: flex;
+  width: 50%;
+}
+
+.home-child-bottom1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: #96E7FA;
+  color: #7688B5;
+  font-size: 22px;
+  box-shadow: 1px 1px 1px 1px;
+  transition: .6s;
+  animation: blink 6s .7s infinite;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border-bottom-left-radius: 100%;
+}
+
+.home-child-bottom2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-color: #85B6DE;
+  color: #9FB7F5;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px 1px #7688B5;
+  transition: .6s;
+  animation: blink 6s .9s infinite;
+  border-bottom-right-radius: 100%;
+}
+
+.home-child-bottom3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: #96E7FA;
+  color: #7688B5;
+  font-size: 22px;
+  box-shadow: 1px 1px 1px 1px;
+  transition: .2s;
+  animation: blink 6s 1.1s infinite;
+}
+
+.home-child-bottom4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-color: #85B6DE;
+  color: #9FB7F5;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px 1px #7688B5;
+  transition: .2s;
+  animation: blink 6s 1.3s infinite;
+}
+
+.home-child-bottom1:hover {
+  transform: scale(1.10);
+  box-shadow: 5px 5px 5px 5px #7688B5;
+  z-index: 1;
+  transition: .2s;
+  border-top-right-radius: 10%;
+}
+
+.home-child-bottom2:hover {
+  transform: scale(1.10);
+  box-shadow: 5px 5px 5px 5px #7688B5;
+  z-index: 1;
+  transition: .2s;
+  border-top-left-radius: 10%;
+}
+
+.dev-icon{
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+}
+
+@keyframes blink {
+  0% {filter: contrast(1)}
+  60%{filter: contrast(1);}
+  70% {filter: contrast(1.75)}
+  100% {filter: contrast(1)}
+}
+
+/* Home ))) */
