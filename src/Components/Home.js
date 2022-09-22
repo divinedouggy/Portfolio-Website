@@ -22,7 +22,7 @@ function Home() {
 
                 </div>
 
-                <div className="home-top-subcontainer2">k
+                <div className="home-top-subcontainer2">
 
                     <div className="home-child-top3">
                         <h1> and</h1>
