@@ -39,12 +39,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   height: 300px;
   width: 300px;
   background-color: #85B6DE;
   box-shadow: 1px 1px 1px 1px;
   color: #7688B5;
-  transition: .6s;
+  transition: .6s ease-out;
   animation: blink 6s .6s infinite;
   font-family: 'Abril Fatface', cursive;
   line-height: 25px;
@@ -55,15 +56,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   height: 300px;
   width: 300px;
   background-color: #B096FA;
   color: #7688B5;
   box-shadow: 1px 1px 1px 1px;
-  transition: .6s;
+  transition: .6s ease-out;
   animation: blink 6s .8s infinite;
   font-family: 'Fjalla One', sans-serif;
   border-top-right-radius: 100%;
+}
+
+.home-child-top2 h1 {
+  margin-left: 20px;
 }
 
 .home-child-top3{
@@ -95,19 +101,30 @@ body {
 }
 
 .home-child-top1:hover {
-  transform: scale(1.10);
-  box-shadow: 5px 5px 5px 5px #7688B5;
+
+  /* box-shadow: 5px 5px 5px 5px #7688B5; */
   z-index: 1;
   transition: .2s;
-  /* border-bottom-right-radius: 10%; */
+  mix-blend-mode:hard-light;
+  box-shadow: none;
+  outline: 1px solid aliceblue;
+  color: aliceblue;
+  /* mix-blend-mode:lighten */
+
+
 }
 
 .home-child-top2:hover {
-  transform: scale(1.10);
-  box-shadow: 5px 5px 5px 5px #7688B5;
+  /* box-shadow: 5px 5px 5px 5px #7688B5; */
   z-index: 1;
   transition: .2s;
-  /* border-bottom-left-radius: 10%; */
+  mix-blend-mode:hard-light;
+  box-shadow: none;
+  outline: 1px solid lavenderblush;
+  color: lavenderblush;
+  /* mix-blend-mode:lighten */
+
+
 }
 
 .home-container-bottom {
@@ -186,19 +203,34 @@ body {
   animation: blink 6s 1.3s infinite;
 }
 
+
+
+/* z-index: 1;
+transition: .2s;
+mix-blend-mode:hard-light;
+box-shadow: none;
+outline: 1px solid aliceblue;
+color: aliceblue; */
+
 .home-child-bottom1:hover {
-  transform: scale(1.10);
-  box-shadow: 5px 5px 5px 5px #7688B5;
   z-index: 1;
   transition: .2s;
+  mix-blend-mode: hard-light;
+  /* box-shadow: 5px 5px 5px 5px #7688B5; */
+  box-shadow: none;
+  outline: 1px solid white;
+  color: white;
   /* border-top-right-radius: 10%; */
 }
 
 .home-child-bottom2:hover {
-  transform: scale(1.10);
-  box-shadow: 5px 5px 5px 5px #7688B5;
   z-index: 1;
   transition: .2s;
+  mix-blend-mode:hard-light;
+  /* box-shadow: 5px 5px 5px 5px #7688B5; */
+  box-shadow: none;
+  outline: 1px solid aliceblue;
+  color: aliceblue;
   /* border-top-left-radius: 10%; */
 }
 

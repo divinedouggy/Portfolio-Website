@@ -8,8 +8,8 @@ function Home() {
 
                 <div className="home-top-subcontainer1">
                     <div className="home-child-top1">
-                        <h1 style={{ fontSize: 45 }}>Hello,</h1>
-                        <h1 style={{ fontSize: 55 }}>I'm Doug.</h1>
+                        <h1 style={{ fontSize: 45, marginRight:20 }}>Hello, </h1>
+                        <h1 style={{ fontSize: 55, marginRight:15  }}>I'm Doug.</h1>
 
                     </div>
 
@@ -32,8 +32,6 @@ function Home() {
                     <div className="home-child-top4">
                         <h1>I have skills in HTML, CSS, Javascript, React, MongoDB, MySQL</h1>
                     </div>
-
-
 
                 </div>
             </div>
