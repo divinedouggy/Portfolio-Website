@@ -161,6 +161,7 @@ function Home() {
 
             <div className="screenshot" onClick={closeImage}>{imageToDisplay}</div>
 
+<div className='all-film'>
             <div className='filmstrip'>
             <p>&nbsp;&nbsp;&nbsp; Whack-A-Mole&nbsp;&nbsp;&nbsp;</p>
                 <img className='smallpic' onClick={getBigImage} src={whackAMolePic} />
@@ -176,17 +177,18 @@ function Home() {
             </div>
             
             <div className='filmstrip'>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YouZoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YouZoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                 <img className='smallpic' onClick={getBigImage} src={youZooPic} />
                 <img className='smallpic' onClick={getBigImage} src={youZooPic2} />
                 <img className='smallpic' onClick={getBigImage} src={youZooPic3} />
             </div>
 
             <div className='filmstrip'>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
                 <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic} />
                 <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic2} />
-                <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic3} /> <p>&nbsp;&nbsp;&nbsp;Special Ingredients</p>
+                <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic3} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Special<br/> Ingredients</p>
+            </div>
             </div>
         </div>
       
