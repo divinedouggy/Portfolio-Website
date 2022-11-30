@@ -1,3 +1,6 @@
+    //Next Time
+    // add links to nav bar
+    
     /*~*    Overall/Mastering    *~*/ 
     // Looking nice is one thing.... make it *~POP~*
 
@@ -6,8 +9,6 @@
     // minor tweaks
         // perhaps add/mimic 3D projection effect to Circle/Squares, OR
         // just add a nice shadow for the whole shape
-    // bonus
-        // Maybe add another ShapePanel for Postman, APIs, anything else?
     //
 
 
@@ -17,17 +18,11 @@
 
 
     /*~*    Projects Section    *~*/ 
-    // cursor idea
-        // for small images, make cursor an "expand" symbol (like 4 arrows in an X shape)
-        // for large imgage, make cursor an X
 
     // big image
-        // make pictures whose title appears over them upon hover (best to always have them there on mobile)
-        // make an X appear on hover, on big image
         // make a transition Fade/Shrink when closing an image
-    // small images
-        // add hover effect of some sort
-        // add shadows or background color, something to glue images together more
+    // ideas
+        // make a hand holding the "card"
     //
 
 
@@ -36,6 +31,7 @@
     // LinkedIn link
     // Email form? (May be best for security)
     // Resume
+    // Per Scholas Completion Certificate 
 
 
     /*~*    Personalize    *~*/ 
@@ -46,7 +42,9 @@
         // reading (book)
         // video games (nes controller)
     // include picture of myself somewhere (need to figure out what I'm comfortable/confident with)
-
+    
+    /*~*    Refinements (Post-MVP)    *~*/ 
+    // make cursors nicer to taste (look up examples) ; maybe add words "Close", "Open"/"Expand"
 
 
 
@@ -71,3 +69,9 @@
         // Add pictures
     // advanced
         // make pictures pop up in dedicated window when clicked, like Special Ingredients
+     // small images
+        // add hover effect of some sort
+        // add shadows or background color, something to glue images together more
+    // cursor idea
+        // for small images, make cursor an "expand" symbol (like 4 arrows in an X shape)
+        // for large image, make cursor an X

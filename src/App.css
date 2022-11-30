@@ -340,6 +340,8 @@ font-size:77px
   background: linear-gradient(90deg, rgba(240,248,255,0.2) 0%, rgba(110,111,180,1) 50%, rgba(110,111,180,1) 75%, rgba(89,89,144,1) 100%);
   border-radius: 25px;
   padding-left: 40px;
+  padding-top:5px;
+  padding-bottom:5px;
 }
 
 .filmstrip {
@@ -369,7 +371,9 @@ font-size:77px
 transform: scale(1.07);
 transition: .2s;
 box-shadow: 5px 5px 13px 0px;
-filter: brightness(115%);
+filter: brightness(110%);
+cursor: url('./Images/expand_cursor_5.png'),auto;
+
 }
 
 .screenshot {
@@ -393,6 +397,14 @@ filter: brightness(115%);
   border-radius: 0px;
 
 }
+
+.screenshot img:hover {
+
+cursor: url('./Images/x_cursor_3.png'),auto;
+}
+
+
+
 
 @keyframes zoomIn {
   0% {
@@ -426,4 +438,10 @@ filter: brightness(115%);
   100% {
     border-radius: 0px;
   }
+}
+
+.certification{
+  margin: 50px;
+  width: 555px;
+  height: 419px;
 }

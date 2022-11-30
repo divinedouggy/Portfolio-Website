@@ -18,8 +18,9 @@ import youZooPic3 from '../Images/youzoo_3.png'
 import specialIngredientsPic from '../Images/special_ingredients.png'
 import specialIngredientsPic2 from '../Images/special_ingredients_2.png'
 import specialIngredientsPic3 from '../Images/special_ingredients_3.png'
+import perScholasCert from '../Images/cert.png'
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 function Home() {
     const [imageToDisplay, setImageToDisplay] = useState("")
@@ -33,12 +34,30 @@ function Home() {
         setImageToDisplay("")
     }
 
+ 
+
+    const ref = useRef(null);
+    const myRef = useRef(null)
+    const clickHandle = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+    const clickHandle2 = () => {
+        myRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
     
  
    
 
     return (
         <div className="home-master-container">
+            (<div className="header">
+ 
+            <p >Home</p> <br></br>
+            <a>About</a><br></br>
+            <p onClick={clickHandle}>Projects</p><br></br>
+            <p onClick={clickHandle2}>Contact</p><br></br>
+   
+    </div>)
 
             <div className="home-container-top">
 
@@ -156,7 +175,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <p className='projects'>Have a look at my projects. <br/><br/></p>
+            <p className='projects' ref={ref}>Have a look at my projects. <br/><br/></p>
 
 
             <div className="screenshot" onClick={closeImage}>{imageToDisplay}</div>
@@ -187,9 +206,14 @@ function Home() {
             &nbsp;
                 <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic} />
                 <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic2} />
-                <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic3} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Special<br/> Ingredients</p>
+                <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic3} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Special<br/> Ingredients</p>
             </div>
             </div>
+
+            <img className='certification' ref={myRef} src={perScholasCert}/>
+
+
+
         </div>
       
     )
