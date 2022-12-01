@@ -31,7 +31,6 @@
     // LinkedIn link
     // Email form? (May be best for security)
     // Resume
-    // Per Scholas Completion Certificate 
 
 
     /*~*    Personalize    *~*/ 
@@ -75,3 +74,6 @@
     // cursor idea
         // for small images, make cursor an "expand" symbol (like 4 arrows in an X shape)
         // for large image, make cursor an X
+
+            /*~*    Contact Section    *~*/ 
+    // Per Scholas Completion Certificate 
