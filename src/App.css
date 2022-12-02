@@ -1,14 +1,4 @@
-body {
-  background-color: #8587DE;
-  /* background-color: #9FB7F5 */
-}
-
-.App {
-  text-align: center;
-}
-
-
-nav {
+/* nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -19,9 +9,33 @@ nav {
 
 nav a {
   text-decoration: none;
+} */
+
+
+
+body {
+  background-color: #8587DE;
+  /* background-color: #9FB7F5 */
 }
 
+.App {
+  text-align: center;
+}
 
+.header{
+  display: flex;
+  width: 1200px;
+  justify-content: space-evenly;
+  color:#96E7FA;
+  font-size: 22px;
+  height: 100px;
+  align-items: center;
+  text-shadow: -1px -1px  slateblue;
+}
+
+.header p{
+  cursor: pointer;
+}
 
 /* ((( Home */
 

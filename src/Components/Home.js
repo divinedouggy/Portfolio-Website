@@ -50,14 +50,14 @@ function Home() {
 
     return (
         <div className="home-master-container">
-            (<div className="header">
- 
-            <p >Home</p> <br></br>
-            <a>About</a><br></br>
-            <p onClick={clickHandle}>Projects</p><br></br>
-            <p onClick={clickHandle2}>Contact</p><br></br>
-   
-    </div>)
+            <div className="header">
+
+                <p>Home</p>
+                <p>About</p>
+                <p onClick={clickHandle}>Projects</p>
+                <p onClick={clickHandle2}>Contact</p>
+
+            </div>
 
             <div className="home-container-top">
 
