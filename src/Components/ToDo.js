@@ -1,6 +1,4 @@
-    //Next Time
-    // add links to nav bar
-    
+
     /*~*    Overall/Mastering    *~*/ 
     // Looking nice is one thing.... make it *~POP~*
 
@@ -13,12 +11,10 @@
 
 
     /*~*    User Experience    *~*/ 
-    // links in Header scroll down to respective part of single-page-application
     // animation as user scrolls down... animation rewinds when user scrolls up
 
 
     /*~*    Projects Section    *~*/ 
-
     // big image
         // make a transition Fade/Shrink when closing an image
     // ideas
@@ -59,6 +55,9 @@
         // change the Circle hover properties to be non-invasive
     // minor tweaks
         // round out all the Square corners, or none of them
+
+        /*~*    User Experience    *~*/ 
+    // links in Header scroll down to respective part of single-page-application
 
 
 

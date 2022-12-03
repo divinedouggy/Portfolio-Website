@@ -53,7 +53,7 @@ function Home() {
             <div className="header">
 
                 <p>Home</p>
-                <p>About</p>
+                <p>About Me</p>
                 <p onClick={clickHandle}>Projects</p>
                 <p onClick={clickHandle2}>Contact</p>
 
