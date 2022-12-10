@@ -1,3 +1,4 @@
+//dev icons
 import reactLogo from '../Images/react.png';
 import htmlLogo from '../Images/html.png';
 import cssLogo from '../Images/css.png'
@@ -6,6 +7,7 @@ import expressLogo from '../Images/express.png'
 import mongoLogo from '../Images/mongodb.png'
 import mySQLLogo from '../Images/mysql.png'
 import nodeLogo from '../Images/node.png'
+// project pictures
 import movieBuffaloPic from '../Images/movie_buffalo.png'
 import movieBuffaloPic2 from '../Images/movie_buffalo_2.png'
 import movieBuffaloPic3 from '../Images/movie_buffalo_3.png'
@@ -18,43 +20,63 @@ import youZooPic3 from '../Images/youzoo_3.png'
 import specialIngredientsPic from '../Images/special_ingredients.png'
 import specialIngredientsPic2 from '../Images/special_ingredients_2.png'
 import specialIngredientsPic3 from '../Images/special_ingredients_3.png'
+//hobby icons
+import tree from '../Images/tree.png'
+import controller from '../Images/controller.png'
+import book from '../Images/book5.png'
+import paw from '../Images/paw2.png'
+import musicNote from '../Images/music_note.png'
+import paintBrush3 from '../Images/paintbrush3.png'
+import pencil from '../Images/pencil2.png'
+import recycle from '../Images/recycle.png'
+//other
 import perScholasCert from '../Images/cert.png'
+import toTop from '../Images/toTop2.png'
+
 
 import { useState, useEffect, useRef } from 'react';
 
 function Home() {
     const [imageToDisplay, setImageToDisplay] = useState("")
 
-    
     function getBigImage(event) {
-        setImageToDisplay(<img src={event.target.src} alt="screenshot"/>)
+        setImageToDisplay(<img src={event.target.src} alt="screenshot" />)
     }
 
     function closeImage() {
         setImageToDisplay("")
     }
 
- 
-
     const ref = useRef(null);
     const myRef = useRef(null)
+    const myRef2 = useRef(null)
+    const myRef3 = useRef(null)
+    const myRef4 = useRef(null)
+
     const clickHandle = () => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
     const clickHandle2 = () => {
         myRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
-    
- 
-   
+    const clickHandle3 = () => {
+        myRef2.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+    const clickHandle4 = () => {
+        myRef3.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+    const clickHandle5 = () => {
+        myRef4.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
         <div className="home-master-container">
-            <div className="header">
+            <div className="header" ref={myRef2}>
 
-                <p>Home</p>
-                <p>About Me</p>
-                <p onClick={clickHandle}>Projects</p>
+                <p id='doug'>Doug Harmon</p>
+                <p onClick={clickHandle}>Portfolio</p>
+                <p onClick={clickHandle4}>Credentials</p>
+                <p onClick={clickHandle5}>More About Me</p>
                 <p onClick={clickHandle2}>Contact</p>
 
             </div>
@@ -88,8 +110,8 @@ function Home() {
                     <div className="home-child-top4"style={{ display:"none" }}>
                         <h1>I have skills in HTML, CSS, Javascript, React, MongoDB, MySQL</h1>
                     </div> */}
-                    <p>Hello, I'm Doug. <br/>
-                    I am a full-stack software developer</p>
+                    <p>Hello, I'm Doug. <br />
+                        I am a full-stack software developer</p>
                 </div>
             </div>
 
@@ -133,7 +155,7 @@ function Home() {
                         <h1>full-stack</h1>
                         <h1>software developer</h1>
                     </div> */}
-               <p>I have graduated from Per Scholas</p>
+                    <p>I have graduated from Per Scholas</p>
                 </div>
 
                 <div className="home-top-subcontainer2">
@@ -175,47 +197,100 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <p className='projects' ref={ref}>Have a look at my projects. <br/><br/></p>
 
+
+            <p className='section-header' ref={ref}>Have a look at my projects. <br /><br /></p>
 
             <div className="screenshot" onClick={closeImage}>{imageToDisplay}</div>
 
-<div className='all-film'>
-            <div className='filmstrip'>
-            <p>&nbsp;&nbsp;&nbsp; Whack-A-Mole&nbsp;&nbsp;&nbsp;</p>
-                <img className='smallpic' onClick={getBigImage} src={whackAMolePic} />
-                <img className='smallpic' onClick={getBigImage} src={whackAMolePic2} />
-                <img className='smallpic' onClick={getBigImage} src={whackAMolePic3} />
+            <div className='all-film'>
+                <div className='filmstrip'>
+                    <p>&nbsp;&nbsp;&nbsp; Whack-A-Mole&nbsp;&nbsp;&nbsp;</p>
+                    <img className='smallpic' onClick={getBigImage} src={whackAMolePic} />
+                    <img className='smallpic' onClick={getBigImage} src={whackAMolePic2} />
+                    <img className='smallpic' onClick={getBigImage} src={whackAMolePic3} />
+                </div>
+
+                <div className='filmstrip'>
+                    &nbsp;
+                    <img className='smallpic' onClick={getBigImage} src={movieBuffaloPic} />
+                    <img className='smallpic' onClick={getBigImage} src={movieBuffaloPic2} />
+                    <img className='smallpic' onClick={getBigImage} src={movieBuffaloPic3} /> <p>&nbsp;&nbsp;&nbsp;MOVIE BUFFalo</p>
+                </div>
+
+                <div className='filmstrip'>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YouZoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <img className='smallpic' onClick={getBigImage} src={youZooPic} />
+                    <img className='smallpic' onClick={getBigImage} src={youZooPic2} />
+                    <img className='smallpic' onClick={getBigImage} src={youZooPic3} />
+                </div>
+
+                <div className='filmstrip'>
+                    &nbsp;
+                    <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic} />
+                    <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic2} />
+                    <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic3} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Special<br /> Ingredients</p>
+                </div>
             </div>
 
-            <div className='filmstrip'>
-            &nbsp;
-                <img className='smallpic' onClick={getBigImage} src={movieBuffaloPic} />
-                <img className='smallpic' onClick={getBigImage} src={movieBuffaloPic2} />
-                <img className='smallpic' onClick={getBigImage} src={movieBuffaloPic3} /> <p>&nbsp;&nbsp;&nbsp;MOVIE BUFFalo</p>
-            </div>
-            
-            <div className='filmstrip'>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YouZoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                <img className='smallpic' onClick={getBigImage} src={youZooPic} />
-                <img className='smallpic' onClick={getBigImage} src={youZooPic2} />
-                <img className='smallpic' onClick={getBigImage} src={youZooPic3} />
-            </div>
-
-            <div className='filmstrip'>
-            &nbsp;
-                <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic} />
-                <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic2} />
-                <img className='smallpic' onClick={getBigImage} src={specialIngredientsPic3} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Special<br/> Ingredients</p>
-            </div>
-            </div>
-
-            <img className='certification' ref={myRef} src={perScholasCert}/>
 
 
+
+            <div className='credentials' ref={myRef3}>      
+            <p className='section-header'>Credentials</p>
+            <img className='certification' src={perScholasCert} />
+            </div>
+
+
+            <p className='section-header' ref={myRef4}>More of my interests.</p>
+            <div className='hobbies'>
+                <img className='hobby-icon' src={tree} />
+                <img className='hobby-icon-wide' src={controller} />
+                <img className='hobby-icon-wide' src={book} />
+                <img className='hobby-icon' src={paw} />
+            </div>
+
+            <div className='hobbies'>
+                <img className='hobby-icon' src={musicNote} />
+             
+                <img className='hobby-icon' src={paintBrush3} />
+                <img className='hobby-icon' src={pencil} />
+                <img className='hobby-icon-wide' src={recycle} />
+
+
+           
+            </div>
+
+      
+        
+            <img className='to-top-icon'  onClick={clickHandle3} src={toTop} />
+
+
+
+
+            <div className='contact' ref={myRef}>
+                <p className='section-header'>Contact me.</p>
+
+                <div className='email-phone'>
+                    <p >Email: douggyharmon@gmail.com</p>
+                    <p>Phone: 574-318-6037</p>
+                </div>
+
+
+                <div className='all-contact-icons'>
+                    <a href="https://github.com/divinedouggy" target="_blank" rel="noreferrer">
+                        <img className='contact-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                    </a>
+                    <a href="https://linkedin.com/in/doug-harmon-ab0779241" target="_blank" rel="noreferrer">
+                        <img className='contact-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
+                    </a>
+                </div>
+            </div>
+
+            <div className='hobbies'></div>
 
         </div>
-      
+
     )
 }
 
