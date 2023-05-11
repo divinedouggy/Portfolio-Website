@@ -74,10 +74,10 @@ function Home() {
             <div className="header" ref={myRef2}>
 
                 <p id='doug'>Doug Harmon</p>
-                <p onClick={clickHandle}>Portfolio</p>
-                <p onClick={clickHandle4}>Credentials</p>
+                <p onClick={clickHandle}>My Portfolio</p>
+                <p onClick={clickHandle4}>My Credentials</p>
                 <p onClick={clickHandle5}>More About Me</p>
-                <p onClick={clickHandle2}>Contact</p>
+                <p onClick={clickHandle2}>Contact Me</p>
 
             </div>
 
@@ -85,31 +85,16 @@ function Home() {
 
                 <div className="home-top-subcontainer1">
                     <div className="home-child-top1">
-                        {/* <h1 style={{ fontSize: 45, marginRight:20 }}>Hello, </h1>
-                        <h1 style={{ fontSize: 55, marginRight:15  }}>I'm Doug.</h1> */}
-
                         <img className='dev-icon' src={htmlLogo} />
                     </div>
 
                     <div className="home-child-top2">
                         <img className='dev-icon' src={cssLogo} />
-                        {/* <h1>I am a</h1>
-                        <h1>full-stack</h1>
-                        <h1>software developer</h1> */}
                     </div>
 
                 </div>
 
                 <div className="home-top-subcontainer2">
-
-                    {/* <div className="home-child-top3"style={{ display:"none" }}>
-                        <h1> and</h1>
-                        <h1>web designer.</h1>
-                    </div>
-
-                    <div className="home-child-top4"style={{ display:"none" }}>
-                        <h1>I have skills in HTML, CSS, Javascript, React, MongoDB, MySQL</h1>
-                    </div> */}
                     <p>Hello, I'm Doug. <br />
                         I am a full-stack software developer</p>
                 </div>
@@ -118,57 +103,33 @@ function Home() {
             <div className="home-container-bottom">
                 <div className="home-bottom-subcontainer1">
                     <div className="home-child-bottom1">
-                        {/* <p>This is my website</p> */}
                         <img className='javascript-icon' src={javascriptLogo} />
 
                     </div>
                     <div className="home-child-bottom2">
-                        {/* <h3>Weee</h3> */}
                         <img className='react-icon' src={reactLogo} />
                     </div>
 
                 </div>
 
                 <div className="home-bottom-subcontainer2">
-                    {/* <div className="home-child-bottom3"style={{ display:"none" }}>
-                        <p>This is my website</p>
-                    </div>
-                    <div className="home-child-bottom4"style={{ display:"none" }}>
-                        <h3>Weee</h3>
-                        <img className='dev-icon' src={reactLogo} />
-                    </div> */}
                     <p>and web designer.</p>
                 </div>
             </div>
             <div className="home-container-top">
 
                 <div className="home-top-subcontainer1">
-                    {/* <div className="home-child-top1" style={{ display:"none" }}>
-                        <h1 >Hello, </h1>
-                        <h1 style={{ fontSize: 55, marginRight:15  }}>I'm Doug.</h1>
-
-                    </div>
-
-                    <div className="home-child-top2"style={{ display:"none" }}>
-
-                        <h1>I am a</h1>
-                        <h1>full-stack</h1>
-                        <h1>software developer</h1>
-                    </div> */}
                     <p>I have graduated from Per Scholas</p>
                 </div>
 
                 <div className="home-top-subcontainer2">
 
                     <div className="home-child-top3">
-                        {/* <h1> and</h1>
-                        <h1>web designer.</h1> */}
                         <img className='express-icon' src={expressLogo} />
                     </div>
 
                     <div className="home-child-top4">
                         <img className='mongodb-icon' src={mongoLogo} />
-                        {/* <h1>I have skills in HTML, CSS, Javascript, React, MongoDB, MySQL</h1> */}
                     </div>
 
                 </div>
@@ -176,30 +137,20 @@ function Home() {
 
             <div className="home-container-bottom">
                 <div className="home-bottom-subcontainer1">
-                    {/* <div className="home-child-bottom1"style={{ display:"none" }}>
-                        <p>This is my website</p>
-                    </div>
-                    <div className="home-child-bottom2"style={{ display:"none" }}>
-                        <h3>Weee</h3>
-                    </div> */}
                     <p>Software Engineering intensive</p>
                 </div>
 
                 <div className="home-bottom-subcontainer2">
                     <div className="home-child-bottom3">
                         <img className='mysql-icon' src={mySQLLogo} />
-                        {/* <p>This is my website</p> */}
                     </div>
                     <div className="home-child-bottom4">
                         <img className='node-icon' src={nodeLogo} />
-                        {/* <h3>Weee</h3> */}
-
                     </div>
                 </div>
             </div>
 
-
-            <p className='section-header' ref={ref}>Have a look at my projects. <br /><br /></p>
+            <h1 className='section-header' ref={ref}>Have a look at my projects. <br /><br /></h1>
 
             <div className="screenshot" onClick={closeImage}>{imageToDisplay}</div>
 
@@ -233,16 +184,13 @@ function Home() {
                 </div>
             </div>
 
-
-
-
             <div className='credentials' ref={myRef3}>      
-            <p className='section-header'>Credentials</p>
+            <h1 className='section-header'>...and my credentials.</h1>
             <img className='certification' src={perScholasCert} />
             </div>
 
-
-            <p className='section-header' ref={myRef4}>More of my interests.</p>
+            <h1 className='section-header' ref={myRef4}>More of my interests.</h1>
+            <p className='sub-header'>( What you might find me doing when I'm not coding )</p>
             <div className='hobbies'>
                 <img className='hobby-icon' src={tree} />
                 <img className='hobby-icon-wide' src={controller} />
@@ -252,24 +200,15 @@ function Home() {
 
             <div className='hobbies'>
                 <img className='hobby-icon' src={musicNote} />
-             
                 <img className='hobby-icon' src={paintBrush3} />
                 <img className='hobby-icon' src={pencil} />
                 <img className='hobby-icon-wide' src={recycle} />
-
-
-           
             </div>
 
-      
-        
             <img className='to-top-icon'  onClick={clickHandle3} src={toTop} />
 
-
-
-
             <div className='contact' ref={myRef}>
-                <p className='section-header'>Contact me.</p>
+                <h1 className='section-header'>Contact me.</h1>
 
                 <div className='email-phone'>
                     <p >Email: douggyharmon@gmail.com</p>

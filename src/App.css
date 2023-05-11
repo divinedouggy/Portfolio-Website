@@ -27,30 +27,58 @@ body {
 
 .header{
   display: flex;
-  width: 1200px;
+  /* width: 1200px; */
+  width: 98.8vw;
   justify-content: space-evenly;
-  /* color:#96E7FA; */
-  
-  height: 150px;
+  /* background: rgb(102,51,153);
+  background: linear-gradient(180deg, rgba(102,51,153,1) 10%, rgba(117,71,174,1) 46%, rgba(129,87,192,1) 68%, rgba(138,100,206,0.8774860285911239) 93%, rgba(147,112,219,0) 100%); */
+  /* background: rgb(102,51,153);
+  background: linear-gradient(180deg, rgba(102,51,153,.3) 10%, rgba(117,71,174,.5) 26%, rgba(147,112,219,0) 100%); */
+  /* height: 150px; */
+  background: rgb(57,57,94);
+  background: linear-gradient(180deg, rgba(57,57,94,.31) 90%, rgba(95,96,158,0) 100%);
+  height: 100px;
   align-items: center;
-  /* text-shadow: -1px -1px  slateblue; */
-  /* background-color:#3b3b54;
-  position: fixed;
-  z-index: 99; */
+  /* background-color:#3b3b54; */
+  /* background-color:#5F609E */
+  /* position: fixed;
+  z-index: 99;  */
 }
 
 .header p{
   cursor: pointer;
-  font-size: 22px;
+  /* font-size: 34px; */
+  font-size: 24px;
   font-family: 'Cairo', sans-serif;
  font-family: 'Yanone Kaffeesatz', sans-serif;
- font-family: 'Quicksand', sans-serif; 
- font-family: 'Fjalla One', sans-serif;
+ /* font-family: 'Quicksand', sans-serif; */
+ /* font-family: 'Fjalla One', sans-serif; */
+
+ font-family: 'PT Sans', sans-serif;
+ 
+ background-clip: text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-text-fill-color: transparent;
+background-image: linear-gradient(-45deg, rgb(228, 228, 228) 0%, rgba(255,255,255,1) 10%, lightgrey 7%, lightgrey 100%);
+background-position: -55px;
+background-size: 255%;
+filter: drop-shadow(1px 1px 1px   #39395E);
+transition: .1s;
+}
+
+.header p:hover{
+animation: sheen .5s ease-in;
+/* filter: none; */
+transition: .5s;
 }
 
 #doug{
   font-weight: bold;
-  font-size: 28px;
+  /* font-size: 40px; */
+  font-size: 33px;
+  margin-top: -5px;
 
 }
 
@@ -59,7 +87,7 @@ body {
 p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   margin: 0;
-  font-size: 48px;
+  font-size: 37px;
 }
 
 .section-header {
@@ -69,7 +97,13 @@ p {
   font-size: 77px;
   height: 200px;
   align-items: center;
-  
+ margin-bottom: 0;
+ margin-top: 150px;
+}
+
+.sub-header{
+  margin-bottom: 50px;
+  font-size: 30px;
 }
 
 .home-master-container {
@@ -82,6 +116,7 @@ p {
 .home-container-top {
   display: flex;
   width: 1200px;
+  margin-top: 100px;
 }
 
 .home-top-subcontainer1 {
@@ -129,10 +164,6 @@ p {
   animation: blink 6s .8s infinite;
   font-family: 'Fjalla One', sans-serif;
   border-top-right-radius: 100%;
-}
-
-.home-child-top2 h1 {
-  margin-left: 20px;
 }
 
 .home-child-top3 {
@@ -381,6 +412,8 @@ p {
   padding-left: 40px;
   padding-top:5px;
   padding-bottom:5px;
+  margin-top: 20px;
+  margin-bottom: -35px;
 }
 
 .all-film p{
@@ -478,6 +511,16 @@ cursor: url('./Images/x_cursor_3.png'),auto;
   }
 }
 
+@keyframes sheen {
+  0% {
+    background-position: -5px;
+  }
+
+  100% {
+    background-position: 155px;
+  }
+}
+
 .credentials{
   display: flex;
   flex-direction: column;
@@ -488,6 +531,7 @@ cursor: url('./Images/x_cursor_3.png'),auto;
   margin: 50px;
   width: 555px;
   height: 419px;
+  margin-bottom: 0;
 }
 
 .contact{
@@ -544,13 +588,13 @@ cursor: url('./Images/x_cursor_3.png'),auto;
 }
 
 .hobby-icon:hover{
-  filter: invert(80%) drop-shadow(0px 0px 5px);
-  transition: .5s;
+  filter: invert(100%) drop-shadow(0px 0px 5px);
+  transition: .5s ease-out;
 }
 
 .hobby-icon-wide:hover{
-  filter: invert(80%) drop-shadow(0px 0px 5px);
-  transition: .5s;
+  filter: invert(100%) drop-shadow(0px 0px 5px);
+  transition: .5s ease-out;
 }
 
 
