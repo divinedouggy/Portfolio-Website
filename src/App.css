@@ -16,7 +16,7 @@ nav a {
 body {
   /* background-color: #8587de; */
   background: rgb(133,135,222);
-  background: linear-gradient(180deg, rgba(133,135,222,1) 0%, rgba(133,135,222,1) 41%, rgba(67,69,129,1) 100%); 
+  background: linear-gradient(180deg, rgba(133,135,222,.88) 0%, rgba(133,135,222,.88) 41%, rgba(67,69,129,.88) 100%); 
   background-attachment: fixed;
   /* background-color: #9FB7F5 */
 }
@@ -48,7 +48,7 @@ body {
 .header p{
   cursor: pointer;
   /* font-size: 34px; */
-  font-size: 24px;
+  font-size: 24.3px;
   font-family: 'Cairo', sans-serif;
  font-family: 'Yanone Kaffeesatz', sans-serif;
  /* font-family: 'Quicksand', sans-serif; */
@@ -64,7 +64,7 @@ body {
 background-image: linear-gradient(-45deg, rgb(228, 228, 228) 0%, rgba(255,255,255,1) 10%, lightgrey 7%, lightgrey 100%);
 background-position: -55px;
 background-size: 255%;
-filter: drop-shadow(1px 1px 1px   #39395E);
+filter: drop-shadow(1px 3px 1px   #39395E);
 transition: .1s;
 }
 
@@ -529,9 +529,22 @@ cursor: url('./Images/x_cursor_3.png'),auto;
 
 .certification{
   margin: 50px;
-  width: 555px;
-  height: 419px;
+  width: 633px;
   margin-bottom: 0;
+}
+
+.resume{
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-text{
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.small-resume{
+  width: 273px;
 }
 
 .contact{

@@ -32,6 +32,8 @@ import recycle from '../Images/recycle.png'
 //other
 import perScholasCert from '../Images/cert.png'
 import toTop from '../Images/toTop2.png'
+import myResume from '../Images/Doug Harmon\'s Resume.pdf'
+import smallResume from '../Images/Resume.jpg'
 
 
 import { useState, useEffect, useRef } from 'react';
@@ -184,9 +186,14 @@ function Home() {
                 </div>
             </div>
 
-            <div className='credentials' ref={myRef3}>      
-            <h1 className='section-header'>...and my credentials.</h1>
-            <img className='certification' src={perScholasCert} />
+            <div className='credentials' ref={myRef3}>
+                <h1 className='section-header'>...and my credentials.</h1>
+                <img className='certification' src={perScholasCert} />
+                <div className='resume'>
+                    <a className='resume-text'><b>Resume</b> <br></br>
+                        (Click to download full-size PDF)</a>
+                    <a href={myResume} download="Doug Harmon's Resume"><img className='small-resume' src={smallResume} /></a>
+                </div>
             </div>
 
             <h1 className='section-header' ref={myRef4}>More of my interests.</h1>
