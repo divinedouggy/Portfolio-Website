@@ -528,9 +528,34 @@ cursor: url('./Images/x_cursor_3.png'),auto;
 }
 
 .certification{
-  margin: 50px;
   width: 633px;
-  margin-bottom: 0;
+}
+
+.cert-header{
+  padding: 50px;
+}
+
+.google-cert-container{
+  display: flex;
+  width: 95vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* padding-top:50px; */
+}
+
+.google-cert{
+  width: 455px;
+  padding-top: 20px;
+}
+
+.google-cert-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 455px;
+  margin-top: 20px;
+  border: 1px solid grey;
 }
 
 .resume{
