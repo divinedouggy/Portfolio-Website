@@ -39,6 +39,8 @@ import troubleshootCert from '../Images/troubleshooting-debugging.jpg'
 import toTop from '../Images/toTop2.png'
 import myResume from '../Images/Doug Harmon\'s Resume.pdf'
 import smallResume from '../Images/Resume.jpg'
+import emailIcon from '../Images/email.png'
+import phoneIcon from '../Images/phone.png'
 
 
 import { useState, useEffect, useRef } from 'react';
@@ -102,8 +104,8 @@ function Home() {
                 </div>
 
                 <div className="home-top-subcontainer2">
-                    <p>Hello, I'm Doug. <br />
-                        I am a full-stack software developer</p>
+                    <p><span style={{fontSize:57, lineHeight:'99px'}}>Hello, I'm Doug.</span> <br/>
+                        I am a full-stack software developer,</p>
                 </div>
             </div>
 
@@ -120,13 +122,14 @@ function Home() {
                 </div>
 
                 <div className="home-bottom-subcontainer2">
-                    <p>and web designer.</p>
+                    <p>web designer, creative thinker, and <br/> detail-oriented problem solver. </p>
                 </div>
             </div>
             <div className="home-container-top">
 
                 <div className="home-top-subcontainer1">
-                    <p>I have graduated from Per Scholas</p>
+                    <p>I have graduated from the 15 week <br/><span style={{fontSize:'51px', lineHeight:'64px', }}>Software Engineering </span><br/> 
+                     intensive offered by Per Scholas.<br/><br/></p>
                 </div>
 
                 <div className="home-top-subcontainer2">
@@ -144,7 +147,9 @@ function Home() {
 
             <div className="home-container-bottom">
                 <div className="home-bottom-subcontainer1">
-                    <p>Software Engineering intensive</p>
+                    <p><br/> I am currently taking Google's 
+                      program, <br/>
+                     <span style={{ fontSize:'49px', lineHeight:'64px', }}> IT Automation with Python</span>.</p>
                 </div>
 
                 <div className="home-bottom-subcontainer2">
@@ -239,12 +244,12 @@ function Home() {
 
             <img className='to-top-icon'  onClick={clickHandle3} src={toTop} />
 
-            <div className='contact' ref={myRef}>
-                <h1 className='section-header'>Contact me.</h1>
+            <div className='contact' >
+                <h1 className='section-header'  ref={myRef}>Contact me.</h1>
 
                 <div className='email-phone'>
-                    <p >Email: douggyharmon@gmail.com</p>
-                    <p>Phone: 574-318-6037</p>
+                    <p><img className='email-icon' src={emailIcon}></img> &nbsp;&nbsp; douggyharmon@gmail.com</p>
+                    <p><img className='phone-icon' src={phoneIcon}></img> &nbsp;&nbsp;&nbsp; 574-318-6037</p>
                 </div>
 
 
@@ -253,12 +258,12 @@ function Home() {
                         <img className='contact-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
                     </a>
                     <a href="https://linkedin.com/in/doug-harmon-ab0779241" target="_blank" rel="noreferrer">
-                        <img className='contact-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
+                        <img className='contact-icon-linkedin' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
                     </a>
                 </div>
             </div>
 
-            <div className='hobbies'></div>
+         
 
         </div>
 

@@ -576,6 +576,7 @@ cursor: url('./Images/x_cursor_3.png'),auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .email-phone {
@@ -587,23 +588,57 @@ cursor: url('./Images/x_cursor_3.png'),auto;
 }
 
 .email-phone p {
+  display: flex;
   font-size: 26px;
   margin: 10px;
   font-family: 'Cairo', sans-serif;
+  align-items: center;
+}
+
+.email-icon{
+  /* filter: drop-shadow(1px 2px 1.5px); */
+  border: 1px black solid;
+  border-radius: 4px;
+  height: 20px;
+  width: 30px;
+}
+
+.phone-icon{
+  /* filter: drop-shadow(1px 2px 1.5px); */
+margin-left: 5px;
+height: 34px;
+width: 21px;
 }
 
 .all-contact-icons{
   display: flex;
-  justify-content: space-evenly;
-  width: 400px;
+  justify-content:space-evenly;
+  align-items: center;
+  width: 477px;
+  margin-top: 25px;
 }
 
 .contact-icon{
-  width: 60px;
+  width: 73px;
+  transition: .2s;
+}
+
+.contact-icon-linkedin{
+  width: 73px;
+  transition: .2s;
 }
 
 .contact-icon:hover{
   cursor: pointer;
+  color: black;
+  filter: invert(100%) drop-shadow(0px 1px 2px);
+  transition: .3s ease-out;
+}
+
+.contact-icon-linkedin:hover{
+  cursor: pointer;
+  filter: invert(100%) drop-shadow(0px 1px 2px);
+  transition: .3s ease-out;
 }
 
 .hobbies{
