@@ -27,22 +27,12 @@ body {
 
 .header{
   display: flex;
-  /* width: 1200px; */
   width: 98.8vw;
   justify-content: space-evenly;
-  /* background: rgb(102,51,153);
-  background: linear-gradient(180deg, rgba(102,51,153,1) 10%, rgba(117,71,174,1) 46%, rgba(129,87,192,1) 68%, rgba(138,100,206,0.8774860285911239) 93%, rgba(147,112,219,0) 100%); */
-  /* background: rgb(102,51,153);
-  background: linear-gradient(180deg, rgba(102,51,153,.3) 10%, rgba(117,71,174,.5) 26%, rgba(147,112,219,0) 100%); */
-  /* height: 150px; */
   background: rgb(57,57,94);
   background: linear-gradient(180deg, rgba(57,57,94,.31) 90%, rgba(95,96,158,0) 100%);
   height: 100px;
   align-items: center;
-  /* background-color:#3b3b54; */
-  /* background-color:#5F609E */
-  /* position: fixed;
-  z-index: 99;  */
 }
 
 .header p{

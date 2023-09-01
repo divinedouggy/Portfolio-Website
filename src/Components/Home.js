@@ -35,9 +35,11 @@ import pythonIntroCert from '../Images/crash-course-python.jpg'
 import pythonOSCert from '../Images/python-operating-system.jpg'
 import gitCert from '../Images/intro-git-github.jpg'
 import troubleshootCert from '../Images/troubleshooting-debugging.jpg'
+import cloudConfigCert from '../Images/config-cloud.jpg'
+import automationPythonCert from '../Images/automate-real-world.jpg'
 //other
 import toTop from '../Images/toTop2.png'
-import myResume from '../Images/Doug Harmon\'s Resume.pdf'
+import myResume from '../Images/Douglas Harmon\'s Resume.pdf'
 import smallResume from '../Images/Resume.jpg'
 import emailIcon from '../Images/email.png'
 import phoneIcon from '../Images/phone.png'
@@ -128,7 +130,7 @@ function Home() {
             <div className="home-container-top">
 
                 <div className="home-top-subcontainer1">
-                    <p>I have graduated from the 15 week <br/><span style={{fontSize:'51px', lineHeight:'64px', }}>Software Engineering </span><br/> 
+                    <p>Late 2022, I graduated from the 15 week <br/><span style={{fontSize:'51px', lineHeight:'64px', }}>Software Engineering </span><br/> 
                      intensive offered by Per Scholas.<br/><br/></p>
                 </div>
 
@@ -147,9 +149,10 @@ function Home() {
 
             <div className="home-container-bottom">
                 <div className="home-bottom-subcontainer1">
-                    <p><br/> I am currently taking Google's 
-                      program, <br/>
-                     <span style={{ fontSize:'49px', lineHeight:'64px', }}> IT Automation with Python</span>.</p>
+                    <p><br/> August 2023, I completed Google's 
+                      <br/>
+                     <span style={{ fontSize:'49px', lineHeight:'64px', }}> IT Automation with Python</span>,<br/> 
+                     a rigorous six course specialization.</p>
                 </div>
 
                 <div className="home-bottom-subcontainer2">
@@ -200,13 +203,15 @@ function Home() {
                 <h1 className='section-header' ref={myRef3}>...and my credentials.</h1>
                 <div className='cert-header'><b>15 week Software Engineer intensive</b><br/><br/><i>Per Scholas, Detroit</i>  </div>
                 <img className='certification' src={perScholasCert} />
-                <div className='cert-header'><b>Google IT Automation with Python program</b> <br/><br/><i>In Progress, 4 of 6 courses completed</i></div>
+                <div className='cert-header'><b>Google IT Automation with Python program</b> <br/><br/><i>Completed, 6 of 6 courses.</i></div>
                 <div className='google-cert-container'>
                     <img className='google-cert' src={pythonIntroCert} />
                     <img className='google-cert' src={pythonOSCert} />
                     <img className='google-cert' src={gitCert} />
                     <img className='google-cert' src={troubleshootCert} />
-                    <div className='google-cert-div'>
+                    <img className='google-cert' src={cloudConfigCert} />
+                    <img className='google-cert' src={automationPythonCert} />
+                    {/* <div className='google-cert-div'>
                         Configuration Management and the Cloud 
                         <br/> ---
                         <i>Pending,</i>
@@ -217,7 +222,7 @@ function Home() {
                         <br/> ---
                         <i>Pending,</i>
                         <i>by August 11th 2023</i>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='resume'>
                     <a className='resume-text'><b>Resume</b> <br></br>
