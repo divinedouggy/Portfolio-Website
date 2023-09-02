@@ -518,23 +518,27 @@ cursor: url('./Images/x_cursor_3.png'),auto;
 }
 
 .certification{
-  width: 633px;
+  width: 755px;
 }
 
 .cert-header{
   padding: 50px;
 }
 
+.specialization-cert{
+  width: 733px;
+}
+
 .google-cert-container{
   display: flex;
-  width: 95vw;
+  width: 75vw;
   justify-content: space-evenly;
   flex-wrap: wrap;
   /* padding-top:50px; */
 }
 
 .google-cert{
-  width: 455px;
+  width: 333px;
   padding-top: 20px;
 }
 
@@ -543,9 +547,9 @@ cursor: url('./Images/x_cursor_3.png'),auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 455px;
+  width: 355px;
   margin-top: 20px;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
 
 .resume{

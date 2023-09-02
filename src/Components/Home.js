@@ -37,6 +37,7 @@ import gitCert from '../Images/intro-git-github.jpg'
 import troubleshootCert from '../Images/troubleshooting-debugging.jpg'
 import cloudConfigCert from '../Images/config-cloud.jpg'
 import automationPythonCert from '../Images/automate-real-world.jpg'
+import specializationCert from '../Images/google_it_automation_with_python.jpg'
 //other
 import toTop from '../Images/toTop2.png'
 import myResume from '../Images/Douglas Harmon\'s Resume.pdf'
@@ -203,14 +204,29 @@ function Home() {
                 <h1 className='section-header' ref={myRef3}>...and my credentials.</h1>
                 <div className='cert-header'><b>15 week Software Engineer intensive</b><br/><br/><i>Per Scholas, Detroit</i>  </div>
                 <img className='certification' src={perScholasCert} />
-                <div className='cert-header'><b>Google IT Automation with Python program</b> <br/><br/><i>Completed, 6 of 6 courses.</i></div>
+                <div className='cert-header'><b>Google IT Automation with Python specialization</b> <br/><br/><i>6 courses (delineated below)</i></div>
+                <img className='specialization-cert' src={specializationCert} />
+                <div className='cert-header'></div>
                 <div className='google-cert-container'>
+                <div className='google-cert-div'>    <i>Crash Course on Python</i>
                     <img className='google-cert' src={pythonIntroCert} />
+                    </div>
+                    <div className='google-cert-div'>    <i>Using Python to Interact with the OS</i>
                     <img className='google-cert' src={pythonOSCert} />
+                    </div>
+                    <div className='google-cert-div'>    <i>Introduction to Git and GitHub</i>
                     <img className='google-cert' src={gitCert} />
+                    </div>
+                    <div className='google-cert-div'>    <i>Troubleshooting and Debugging Techniques</i>
                     <img className='google-cert' src={troubleshootCert} />
+                    </div>
+                    <div className='google-cert-div'>    <i>Configuration Management and the Cloud</i>
                     <img className='google-cert' src={cloudConfigCert} />
+                    </div>
+                    <div className='google-cert-div'>    <i>Automating Real-World Tasks with Python</i>
                     <img className='google-cert' src={automationPythonCert} />
+                    </div>
+                    
                     {/* <div className='google-cert-div'>
                         Configuration Management and the Cloud 
                         <br/> ---
